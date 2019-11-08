@@ -25,13 +25,12 @@ Customer
 * Tenure
 * Custcat
 
+custcat has four possible values that correspond to the four customer groups, as follows: 
+* 1 - Basic Service 
+* 2 - E-Service 
+* 3 - Plus Service 
+* 4 - Total Service
+  
 Demographic data (independent) is used to predict usage patterns.
 Customer data (dependent) is used as label
-
-custcat has four possible values that correspond to the four customer groups, as follows: 
-  * 1- Basic Service 
-  * 2- E-Service 
-  * 3- Plus Service 
-  * 4- Total Service
-
 Our objective is to build a classifier, to predict the class of unknown cases. 
