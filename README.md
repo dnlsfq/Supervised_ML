@@ -1,3 +1,8 @@
+
+
+
+
+
 # Supervised_ML
 Classification Algorithm
 
@@ -34,3 +39,42 @@ custcat has four possible values that correspond to the four customer groups, as
 Demographic data (independent) is used to predict usage patterns.
 Customer data (dependent) is used as label
 Our objective is to build a classifier, to predict the class of unknown cases. 
+
+---
+
+## Components
+
+```
+import streamlit as st 
+import streamlit.components.v1 as components
+
+components.html()
+
+components.iframe()
+
+components.declare_component()
+```
+
+## Static Components
+stateless and only send data to the browser
+
+```st.markdown```
+
+```
+def github_gist(gist_creator, gist_id, height=600, scrolling=True):
+    components.html(
+        f"""
+        <script src="https://gist.github.com/{gist_creator}/{gist_id}.js">
+
+        </script>
+        """,
+        height = height,
+        scrolling = scrolling
+    )
+```
+
+## Bidirectional Components 
+internal state and send back from the browser 
+
+```components.declare_components(...)```
+
